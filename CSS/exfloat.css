@@ -1,0 +1,22 @@
+.grande
+{
+    float: left;
+    background-color: black;
+    height: 750px;
+    width: 500px;
+
+}
+
+.petite 
+{
+    float: left;
+    height: 250px;
+    width: 250px;
+    background-color: yellow;
+}
+
+body
+{
+    max-width: 1000px;
+    max-height: 750px;
+}

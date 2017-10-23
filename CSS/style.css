@@ -1,0 +1,317 @@
+/* ------------------------------------------------------------
+|   Dans cette feuille de styles CSS, je vais pouvoir définir  |
+|   l'apparence que je veux donner aux différents éléments     |
+|   que composent ma page !                                    |
+|                                                              |
+|   ### La Syntaxe ###                                         |  
+|   balise {                                                   |
+|        propriete:valeur;                                     |
+|    }                                                         |
+--------------------------------------------------------------*/
+
+/* -- je cible dans ma page HTML, tous les éléments A,
+      tous les éléments H1 et tous les éléments H3 -- */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Cinzel|Gloria+Hallelujah|Nosifer|Roboto+Condensed');
+      
+a, h1, h3
+{
+    font-family: 'Acme', sans-serif;
+    color: rgb(143, 78, 8);
+    
+}
+
+/*---------------------------------------------------------
+|  Cibler via la "classe" de l'élément                     |
+|  NB : Une même classe peut-être présente plusieurs fois  |
+|  sur une même page.                                      |
+|                                                          |
+|  .LaClasse                                               |
+|  {                                                       |
+|      propriete:valeur;                                   |
+|  }                                                       |
+----------------------------------------------------------*/
+
+/*
+    CONSIGNE :
+        1 - Tous les liens de la classe "header" en noir
+        2 - Non souligné
+        3 - Affiché en ligne via la propriété "display"
+
+*/
+body
+{
+    background-image: url('img/ws.jpg');
+    background-size: cover;
+}
+
+.header a, li
+{
+    display: inline-block; 
+    width: 317px;    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* - WIDTH : me permet de définir la largeur de l'élément - */ 
+/* - Text-align permet d'aligner mon texte dans son élément */
+
+/*---
+  Ici, je cible tous les liens présent dans la div class
+  "header"
+  --- */
+
+  /* .header a */
+      /* -- Plusieurs façons de définir une couleur -- */
+
+      /* -- Mot Clé de la Couleur -- */
+      
+      /* -- Notation Hexadécimale(0000) -- */
+
+      /* -- Notation Décimale (rgb) -- */
+      
+      /* -- Gérer le soulignement de mon texte --*/
+     
+      /* -- Modifier la taille de la police --*/
+
+      /*-- Je souhaite que mes liens s'affiche en Majuscule --*/
+
+
+
+
+/*--
+   Ici, je cible toutes les listes présentes dans la div class header 
+--*/
+
+.header ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.contenu
+{
+    font-family: 'cinzel', sans-serif;
+    font-size: 13px;
+}
+
+a:hover
+{
+    color: #9f60a9;
+}
+
+/* -- 
+    Je change la couleur de mon lien à l'intérieur de la classe "current"
+-- */
+
+.current a
+{
+    color: #807183;
+}
+
+/*-----------------------------------------------------------
+|    Cibler via son "ID" un élément                         |
+|    NB : Un ID ne peut-être présent qu'une seule fois sur  |
+|    une même page.                                         |
+|                                                           |
+|    #MonID                                                 |
+|    {                                                      |
+|        propriete:valeur;                                  |
+|    }                                                      |
+-----------------------------------------------------------*/
+
+#page 
+{
+    /* -- je vais définir la largeur de ma page -- */
+    width: 960px;
+
+    /* -- margin : <top/bottom> <left/right> -- */
+    margin: 0 auto;
+    background: rgba(19, 4, 4, 0.836);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+
+/* ----------------------
+CONSIGNE :
+
+        1 - A ma div#page, ajouter une marge top/bottom de 80px;
+        2 - Ajouter avec la propriété border-radius un arrondi de
+            5px à div#page
+        3 - Puis, grace à box-shadow, ajouter une ombre légère 
+            autour de div#page */
+
+
+.contenu h1
+{
+/* -- Aligner mon titre au milieru -- */
+text-align: center;
+
+/* -- Je ne souhaite pas que le titre soit en gras -- */
+font-weight: normal;
+
+/* -- solid : Ligne par défaut, dotted : Petits-Points,
+dashed : des traits d'unions --*/
+border-bottom: 1px dotted #000;
+}
+
+.BandeauDuHaut
+{
+    width: 100%;
+    height: 410px;
+    background: url('img/30site.jpg') no-repeat; 
+    background-size:contain;
+}
+/*-- CSS pour illustration et article --*/
+.contenu
+{
+    /* -- Dimension & Positionnement -- */
+    width: 100%;   
+    height: auto;
+    float: left;
+    /* -- Décoration --*/
+}
+
+.illustration
+{
+    /* -- Dimension & Positionnement -- */
+    width: 470px;
+    height: auto;
+    float: left;
+    /* -- Décoration --*/
+    margin-right: 10px;
+}
+
+.illustration img
+{
+    max-width: 100%;
+}
+
+.article
+{
+    /* -- Dimension et positionnement -- */
+    width: 460px;
+    height: auto;
+    float: left;
+    /* -- Décoration --*/
+    margin: 0 10px 0 10px;
+    text-align: justify;    
+}
+
+.footer
+{
+    width: 100%;
+    height: 250px;
+    height: auto;
+    float: left;
+    background-color: rgba(19, 4, 4, 0.74);
+    padding-top: 20px;
+}
+
+.gmap
+{
+    width: 230px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+}
+ 
+.newsletter
+{
+    width: 240px;
+    height: auto;
+    float: left;
+}
+.contact
+{
+    width: 240px;
+    height: auto;
+    float: left;
+}
+
+.discord
+{
+    width: 240px;
+    height: auto;
+    float: right        ;
+}
+
+.newsletter fieldset
+{
+    font-family: 'roboto condensed', sans-serif;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    height: 180px;
+}
+
+.newsletter input
+{
+    width: 91%;
+    height: 25px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+
+}
+
+.newsletter input[type=submit]
+{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background: #fff;
+    font-size: 15px;
+    font-weight: Bold;
+    cursor: pointer;
+}
+
+.header a:hover
+{
+    background-color: #fff;
+}
+
+.contact h3
+{
+    color: rgb(221, 178, 129);
+    padding-left: 20px;
+    font-family: 'roboto condensed', sans-serif;
+    font-weight: normal;
+}
+
+.contact address 
+{
+    color: rgb(221, 178, 129);
+    padding-left: 20px;
+    font-family: 'roboto condensed', sans-serif;
+}
+
+.contact address strong
+{
+    font-size: 20px;
+}
+
+.contact address a
+{
+
+}
+
+.contenu
+{
+    color: rgb(221, 178, 129);
+}
+
+.footer
+{
+    border: solid;
+    box-shadow: 2px black;
+}
+
+
