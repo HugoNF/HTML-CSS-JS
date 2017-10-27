@@ -1,71 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Acme|Cinzel|Gloria+Hallelujah|Nosifer|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Nosifer|Pacifico|Roboto+Condensed');
 
 .page
 {
     max-width: 985px;
     font-family: 'Roboto condensed';
-    background-color: rgb(71, 69, 69);
+    background-color: rgba(97, 106, 112, 0.568);
     margin: 80px auto 80px auto;
-    box-shadow: 5px 5px 5px black;
-    border-radius: 5px;
     color: rgb(240, 95, 0);
     overflow: hidden;
     padding: 5px;
     margin-bottom: -3px;
+    border: rgb(6, 38, 51) solid;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.partenaires
+{
+    float: left;
+    font-family: 'Pacifico';
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 132, 193)
 }
 
 .partenaires img
 {
-    width: calc(925px / 4);
     float: left; 
-    height: auto;
+    height: 170px;
     margin: 5px 5px;
-    border-radius: 5px;
-    border: black solid 2px;
-    max-width: 100%;
-    -webkit-filter: grayscale(100%);
+    padding-left: 11px;
     filter: grayscale(100%);
-    margin-bottom: 50px;
 }
+
 
 .partenaires img:hover
-{
-    -webkit-filter: grayscale(0%);
+{   
     filter: grayscale(0%); 
     transition-duration: 2s;
-
+    transform: rotate(0.1turn);
 }
 
-aside
-{
-    float: left;
-    width: 260px;
-    height: auto;
-    margin-top: 10px;
-}
 
-aside img
-{
-    max-width: 100%;
-}
-
-article
-{
-    width: 490px;
-    height: auto;
-    float: left;
-    padding-bottom: 35px; 
-}
 
 header
 {
     float: left;    
-    width: 960px;
+    width: 960px;   
 }
 
 header li:hover
 {
     background: white;
+}
+
+header a:hover
+{
+    color: rgb(240, 95, 0);
 }
 
 header a,li
@@ -136,34 +128,41 @@ header a,li
     font-size: 20px;
 }
 
-footer
-{
-    width: 100%;
-    height: auto;
-    background-color: rgb(58, 11, 11);
-}
 
 .googlemap
 {
-    width: 310px;
+    width: 270px;
     height: auto;
     float: left;
-    margin-left: 10px;
+    margin-left: 45px;
     max-width: 100%;
-    padding-left: 390px; 
+    
+     
 }
  
 .newsletter
 {
-    width: 320px;
+    width: 270px;
     height: auto;
     float: left;
+    margin-left: 50px;
 }
 .contact
 {
-    width: 320px;
+    width: 270px;
     height: auto;
     float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.contact fieldset
+{
+    font-family: 'roboto condensed', sans-serif;
+    border-radius: 8px;
+    border: 2px solid rgb(6, 38, 51) solid;
+    color: rgb(6, 38, 51);
+    height: 180px;
 }
 
 .contact a
@@ -174,13 +173,13 @@ footer
 
 body
 {
-    background-image: url('img/ws2.jpg'); 
+    background-image: url('img/ws3.jpg'); 
     background-size: cover;
 }
 
 .topheader a:hover
 {
-    color: yellow;
+    color: rgb(6, 38, 51);
 }
 
 .topheader a
@@ -192,14 +191,29 @@ body
 .topheader
 {
     float: left;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(180deg,white, gray);
     width: 100%;
+    border: rgba(0, 0, 0, 0.699) solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
 }
 
 footer
 {
-    background-color: gray;
+    background-color: rgba(97, 106, 112, 0);
     float: left;
+    width: 100%;
+    height: auto;
+    margin-top: -47px;  
+}
+
+footer >.page
+{
+    background-color: rgba(97, 106, 112, 0.568);
+    border-top: none;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    margin-top: 50px;
 }
 
 .topheader p
@@ -207,4 +221,45 @@ footer
     text-align: right;
 }
 
-header text 
+header img
+{
+    padding-top: 5px;
+}
+
+/* -- quand je travaille, je précise soit la largeur soit la hauteur afin de garder les proportions de celle-ci. Si je n'ai pas le choix je peux utiliser la propriété objectfit en sachant qu'elle n'est pas prise en charge par internet exploreur et qu'il faudra polyfill --*/
+
+body
+{
+    margin: 0px;
+}
+
+section
+{
+    float: left;
+    width: 100%;
+    height: auto;
+}    
+section aside
+{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+section article
+{
+    width: 50%;
+    height: auto;
+    float: left;
+    box-sizing: -50px;
+}
+
+section aside img
+{
+    margin-top: 30px;
+    max-width: 100%;
+    margin-left: 50px;
+}
+/* --- nav ul li:2nth :nth-child(3) ---*/
+/* --- utilisez border sizing pour article / img --- */
+

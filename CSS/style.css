@@ -188,11 +188,25 @@ border-bottom: 1px dotted #000;
     float: left;
     /* -- Décoration --*/
     margin-right: 10px;
+    position: relative;
+{
+    cursor: url('img/loupe.png')
+}
+
+.loupe
+{
+    position: absolute;
 }
 
 .illustration img
 {
     max-width: 100%;
+}
+
+.illustration:hover
+    width: 40px;
+    bottom: 567px;
+    left: 446px;
 }
 
 .article
