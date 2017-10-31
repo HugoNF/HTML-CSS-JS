@@ -1,20 +1,22 @@
 body
 {
     overflow-x: hidden;
+    background: #7dc1ee;
 }
-.projecteur img
+.projecteur #myCarousel img
 {
     width:100%;
-    height:100vh;
+    height:auto;
     position: relative;
 }
 
+
 .projecteur nav
 {
-    position: absolute;
+    position: absolute !important;
     z-index: 2;
     width: 100%;
-    bottom: 900px;
+    top: 0px;
     left: 200px;
     background: rgba(53, 49, 49, 0.856);
     margin-left: -200px;
@@ -59,6 +61,11 @@ section #nos-photos
     background: rgb(46, 46, 82)
 }
 
+#nos-photos p
+{
+    color: rgb(113, 185, 64);
+}
+
 #nos-videos
 {
     margin-top: 20px;
@@ -68,6 +75,7 @@ section #nos-photos
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
+    text-align: center;
 }
 
 #videos-suite
@@ -98,3 +106,67 @@ footer
     text-align: center;
     line-height: 30px;
 }
+
+iframe 
+{
+    border-radius: 180px;
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+            }
+        
+            /* Extra Small Devices, Phones */ 
+            @media only screen and (min-width : 480px) {
+        
+            }
+        
+            /* Small Devices, Tablets */
+            @media only screen and (min-width : 768px) {
+        
+            }
+        
+            /* Medium Devices, Desktops */
+            @media only screen and (min-width : 992px) {
+        
+            }
+        
+            /* Large Devices, Wide Screens */
+            @media only screen and (min-width : 1200px) {
+        
+            }
+        
+            /*==========  Non-Mobile First Method  ==========*/
+        
+            /* Large Devices, Wide Screens */
+            @media only screen and (max-width : 1200px) {
+        
+            }
+        
+            /* Medium Devices, Desktops */
+            @media only screen and (max-width : 992px) {
+        
+            }
+        
+            /* Small Devices, Tablets */
+            @media only screen and (max-width : 768px) {
+        
+            }
+        
+            /* Extra Small Devices, Phones */ 
+            @media only screen and (max-width : 480px) {
+        
+            }
+        
+            /* Custom, iPhone Retina */ 
+            @media only screen and (max-width : 320px) {
+        
+            }

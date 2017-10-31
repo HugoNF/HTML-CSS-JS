@@ -1,0 +1,102 @@
+body
+{
+    background-image: url(../img/ws.jpg);
+    background-size: cover;
+}
+
+.container-full
+{
+    width: 960px;
+    margin: 0 auto;
+    background: rgba(19, 4, 4, 0.836);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.header a, li
+{
+    display: inline-block; 
+    width: 317px;    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.footer
+{
+    width: 100%;
+    height: 250px;
+    height: auto;
+    float: left;
+    background-color: rgba(19, 4, 4, 0.74);
+    padding-top: 20px;
+}
+
+
+.newsletter fieldset
+{
+    font-family: 'roboto condensed', sans-serif;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    height: 180px;
+}
+
+.newsletter input
+{
+    width: 91%;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.newsletter input[type=submit]
+{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background: #fff;
+    font-size: 15px;
+    font-weight: Bold;
+    cursor: pointer;
+}
+
+.gmap
+{
+    width: 230px;
+    height: auto;
+    float: left;
+}
+ 
+.newsletter
+{
+    width: 240px;
+    height: auto;
+    float: left;
+    margin: 5px;
+}
+.contact
+{
+    margin-left: 5px;
+    width: 220px;
+    height: auto;
+    float: left;
+}
+
+.discord
+{
+    width: 240px;
+    height: auto;
+    float: left;
+}
