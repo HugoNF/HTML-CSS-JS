@@ -204,6 +204,7 @@ border-bottom: 1px dotted #000;
 }
 
 .illustration:hover
+{
     width: 40px;
     bottom: 567px;
     left: 446px;

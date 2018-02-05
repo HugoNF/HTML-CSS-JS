@@ -1,0 +1,27 @@
+#page
+{
+    width: 960px;
+    height: 960px;
+    background: rgb(155, 104, 17);
+    position: relative;
+    margin: 80px auto 80px auto;
+}
+
+.blue
+{
+    position: sticky;
+    background: url("../web/assets/img/vampire.jpg")
+    top: 0px;
+    width: 500px;
+    height: auto;
+}
+
+.bloc-1
+{
+    display: initial;
+}
+
+.bloc-2
+{
+    display: inline;
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Acme|Amatic+SC');
+
+body
+{
+    background: url('../img/fond.jpeg');
+    background-size: cover;
+}
+
+#page 
+{
+    max-width: 985px;
+    background-color: rgba(71, 69, 69, 0.705);
+    margin: 80px auto 80px auto;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+    margin-bottom: -3px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+h1 
+{
+    color: rgb(240, 95, 0);
+    font-family: 'Acme';
+    text-align: center;
+}
+
+.bandeau a img
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 200px;
+}
+
+nav ul li
+{
+    display: inline-table;
+    text-decoration: none;
+    font-family: 'Amatic SC';
+    font-size: 26px;
+    text-align: center;
+    padding-right: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+nav a
+{
+    color: rgb(240, 95, 0);
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav li:hover
+{
+    background: white;
+}
+
+nav a:hover
+{
+    text-decoration: none;
+    color: rgb(114, 22, 114);
+}
+
+nav
+{
+    margin-left: 30px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+footer p
+{
+    font-family: 'roboto condensed';
+    text-align: center;
+    color: rgb(7, 2, 2);
+    line-height: -5px;
+}
+
+.contenu
+{
+    width: 100%;
+}
+aside img
+{
+    max-width: 50%
+}

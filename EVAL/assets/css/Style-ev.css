@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+h1, h2, h3
+{
+    font-family: 'Merienda';
+}
+
+h1 
+{
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+}
+
+header h3
+{
+    font-size:  20px;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.bandeau
+{
+    background-image: url('../img/background.jpg');
+    text-align: center;
+}
+
+.bandeau
+{
+    margin-bottom: 30px;
+}
+
+.bandeau h1
+{
+    line-height: 85px;
+}
+
+.formulaire h3
+{
+    color: #2F4073;
+}
+
+form
+{
+    margin-top: 10px;
+}
+
+fieldset
+{
+    border-radius: 1px;
+    border: 2px solid rgb(14, 0, 0);
+    color: rgb(0, 0, 0);
+    height: 292px;
+}
+
+
+header
+{
+    background: #061339;
+}
+
+.contenu
+{
+    background: #f1f1f1;
+}
+
+#myCarousel
+{
+    float: right;
+}
+
+.form-horizontal
+{
+    float: left;
+}
+
+.btn-primary
+{
+    background: green;
+    border-color: green;
+    width: 100%;
+}
+
+.btn-primary:hover
+{
+    background-color: rgb(30, 218, 30);
+    border-color: rgb(30, 218, 30);
+}
+
+.article
+{
+    background: #dedede;
+    margin-top: 30px;
+}
+
+.article img
+{
+    background: #7885A5;
+}
+
+.article img:hover
+{
+    background: #061339;
+}
+
+footer
+{
+    background: #061339;
+    height: 32px;
+}
+
+footer p
+{
+    float: right;
+    line-height: 30px;
+    color: #fff;
+}

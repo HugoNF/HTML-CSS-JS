@@ -3,17 +3,22 @@ body
     overflow-x: hidden;
     background: #7dc1ee;
 }
+
+.container-full
+{
+    position: relative;
+}
+
 .projecteur #myCarousel img
 {
     width:100%;
     height:auto;
-    position: relative;
 }
 
 
 .projecteur nav
 {
-    position: absolute !important;
+    position: fixed !important;
     z-index: 2;
     width: 100%;
     top: 0px;
